@@ -40,7 +40,6 @@ print sl.lower()
 
 #Count string
 
-print s.count()
 print s.count('o')
 print s.find('o')
 
