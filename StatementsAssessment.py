@@ -13,6 +13,9 @@ for x in range(10):
         print x,
 print''
 
+#better solution:
+print range(0,11,2)
+
 #Use List comprehension to create a list of all numbers between 1 and 50 that are divisble by 3.
 x = 0
 for x in range(1,50):
@@ -47,3 +50,12 @@ for x in range(1,101):
         print '= Buzz'
     else:
         print x
+
+#Use List Comprehension to create a list of the first letters of every word in the string below:
+st = 'Create a list of the first letters of every word in this string'
+l = st.split()
+l1 =[]
+for i in l:
+    l1.append(i[0])
+print l1
+
