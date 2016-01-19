@@ -60,5 +60,6 @@ for i in l:
 print l1
 
 #or use this for a cleaner approach
+
 l2 = [word[0] for word in st.split()]
 print l2
