@@ -1,9 +1,5 @@
-# function to calculate volume of a sphere
+"""# function to calculate volume of a sphere
 def vol(rad):
-    """
-
-    :rtype: object
-    """
     import math
     return float(4 / 3) * math.pi * rad ** 3
 
@@ -65,7 +61,25 @@ def unique_list(l):
 def multiply(numbers):
     prod = 1
     for i in numbers:
-        prod *=i
+        prod *= i
     return prod
 
-print multiply([1,2,4,5,7,-8])
+
+print multiply([1, 2, 4, 5, 7, -8])
+
+"""
+# Python function to check if a word/phrase is palindrome or not
+def palindrome(s):
+    s = s.replace(' ', '')  # to remove white space from the string
+    return bool(s[::-1] == s)
+
+
+print palindrome('nurses run')
+print palindrome('hotel')
+
+# Python function to check whether a string is pangram or not.
+# set() is an unordered collection with no duplicate elements
+
+def ispangram(str1, alphabet=string.ascii_lowercase):
+    alphaset = set(alphabet)
+    return alphaset <= set(str1.lower())
